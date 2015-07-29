@@ -1,3 +1,6 @@
+
 var Async = {
-			Async : require('./async');
+			AsyncFunctions : require('./async')
 }
+
+module.exports = Async;

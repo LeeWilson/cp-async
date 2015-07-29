@@ -1,6 +1,6 @@
 {
   "name": "cp-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "cp async",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,8 @@
   "author": "contact partners",
   "license": "na",
   "dependencies": {
+  },
+  "devDependencies":{
     "require": "^2.4.20"
   }
 }
