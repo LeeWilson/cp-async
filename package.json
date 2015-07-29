@@ -1,0 +1,17 @@
+{
+  "name": "cp-async",
+  "version": "1.0.0",
+  "description": "cp async",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "cp-async"
+  ],
+  "author": "contact partners",
+  "license": "na",
+  "dependencies": {
+    "require": "^2.4.20"
+  }
+}
