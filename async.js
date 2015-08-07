@@ -14,7 +14,7 @@
  ***********/
 var React = require('react');
 var onlineData = false;
-var dbas = require('aeriandi-dbas');
+var dbas = require('../cp-dbas');
 
 module.exports = {
 			parseDataSet: function(dataSet,parseDataTableFunc){

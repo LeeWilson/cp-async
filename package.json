@@ -1,6 +1,6 @@
 {
   "name": "cp-async",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "cp async",
   "main": "index.js",
   "scripts": {
