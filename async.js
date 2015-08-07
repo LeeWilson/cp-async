@@ -25,7 +25,6 @@ module.exports = {
 						return returnObj;
 			},
 			parseDataTable: function(data){
-						var startTimeStamp = new date();
 						var dataArray = [];
 						var headers = data.headers;
 						var headersToUse = [];
