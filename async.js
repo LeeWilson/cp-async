@@ -48,28 +48,18 @@ module.exports = {
 						/*
 						 //Expected format of async data
 						 asyncData= {
-						 Online: {scriptName: 'Campaign.GetAllLeadsForUser',
+						 scriptName: 'Campaign.GetAllLeadsForUser',
 						 args: [argument]
-						 },                                                     //required
-						 Offline:{offlineMockName:'UserCampaigns'}              //required
-						 UiBlock:true                                           //optional
 						 }
 						 */
 						var self = this;
 						var asyncData = thatAsyncData;
 						if (onlineData) {
 
-									var parameters = {};
-
-									for(var b=0; b< asyncData.Online.args.length; b++){
-												for ( var keyb in asyncData.Online.args[b]){
-															parameters[keyb] = asyncData.Online.args[b][keyb]
-												}
-									}
 									var payload = {
-												uid: asyncData.Online.scriptName,
-												command: asyncData.Online.scriptName,
-												parameters:parameters
+												uid: asyncData.scriptName,
+												command: asyncData.scriptName,
+												parameters:asyncData.args
 									}
 									$.ajax({
 												url: systemObj.baseUrl + '/' + systemObj.serviceUrl,
@@ -116,7 +106,7 @@ module.exports = {
 												}
 									});
 						} else {
-									dbas.get(asyncData.Offline.offlineMockName, function (err, data) {
+									dbas.get(asyncData.scriptName, function (err, data) {
 
 												if (err === null) {
 															var returnData;
